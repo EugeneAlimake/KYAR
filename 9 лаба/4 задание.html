@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form>	
+<input type='radio' name='s' id="1" value='1' onclick="x2()"/> y=x^2
+<input type='radio' name='s' id="2" value='2' onclick="x3()" /> y=x^3
+<input type='radio' name='s' value='3'onclick="sin()" /> y=sin(x)
+<input type='radio' name='s' id="4"  value='4' onclick="cos()"/> y=cos(x)<br/>
+<select class="select-color" name="colors" id="vse">
+  <option style="background-color:#cccccc" value="#cccccc"></option> 
+  <option style="background-color:#ffff00" value="#ffff00"></option> 
+  <option style="background-color:#ff0000" value="#ff0000"></option> 
+  <option style="background-color:#8099E8" value="#8099E8"></option> 
+</select>
+<br/>
+<br/>
+
+<canvas id="c1" width="100" height="1200" style="color: blue"></canvas>
+</form>
+<script type="text/javascript">
+
+var canvas=document.getElementById('c1');
+var ctx = canvas.getContext("2d");
+
+
+var x = -0.1; 
+var q = -20;
+var timer;
+function x2(){
+drawx2();
+ctx.fillStyle=document.getElementById('vse').value;
+function drawx2(){
+
+	y = Math.pow(q,2);
+		q=q+0.1;
+	ctx.fillRect(50+q,100+0.5*(-y), 2,2);
+	timer = setTimeout(drawx2, 50);
+}
+}
+function x3(){
+drawx3();
+ctx.fillStyle=document.getElementById('vse').value;
+function drawx3(){
+
+	y = Math.pow(q,3);
+		q=q+0.1;
+	ctx.fillRect(50+q,100+0.5*(-y), 2,2);
+	timer = setTimeout(drawx3, 50);
+}
+}
+function sin(){
+drawSin();
+ctx.fillStyle=document.getElementById('vse').value;
+function drawSin(){
+
+	y = Math.sin(x);
+		x=x+0.1;
+	ctx.fillRect(5*x,100+5*y, 2,2);
+	timer = setTimeout(drawSin, 50);
+}
+}
+function cos(){
+drawcos();
+ctx.fillStyle=document.getElementById('vse').value;
+function drawcos(){
+
+	y = Math.cos(x);
+		x=x+0.1;
+	ctx.fillRect(5*x,100+5*y, 2,2);
+	timer = setTimeout(drawcos, 50);
+}
+}
+</script>
+</body>
+</html>

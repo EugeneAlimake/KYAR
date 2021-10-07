@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  	$(function(){
+  	$("img").on("click", function() {
+    var image =  $(this).attr("src");
+    if (image = "1.jpg") {
+        $(this).attr("src", "2.jpg");
+    } 
+
+});
+  });
+  </script>
+<body>
+<img id="image" src="1.jpg">
+</body>
+</html>

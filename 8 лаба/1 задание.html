@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var col="black"
+function font(element){
+	if(col=="black")
+	{
+		element.style.color='blue';
+		col='blue';
+	}
+	else
+	{
+		element.style.color='black';
+		col='black';
+	}
+}
+</script>	
+</head>
+<body>
+<p id="a" style="font-style:black;" onMouseOut="font(this)">
+ Наведите мышью.</p>
+</body>
+</html>

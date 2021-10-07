@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form name='fit'>
+<textarea style="font-weight: bold">Факультет информационных технологий</textarea><br>
+<br><input multiple value='Фамилия' type="text" name='lastname'/>
+<br/>
+<input multiple type='text' name='firstname' value='Имя'/>
+
+<input type="button" id="send" onclick="a()" value="Напечатать" />
+</form>
+
+</body><script>
+function a()
+{
+document.write(document.forms[0].elements[0].value + "<br>");
+document.write("Студент" );
+document.write(document.forms[0].lastname.value);
+}
+</script>
+</html>

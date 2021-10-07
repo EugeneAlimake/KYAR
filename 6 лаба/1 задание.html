@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+var okno,okno1;
+		function hop1()
+		{ 
+	okno=window.open();
+	okno.document.title="Вы открыли новое окно";
+
+		}
+		function hop2(){
+			okno.window.close();
+		}
+		function hop3(){
+			okno.document.write(okno.document.title);
+		}
+		function hop4(){
+	okno1.document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#EFCDB8;'>");
+str="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 300px;height: 40px;vertical-align: middle;text-align:center'>";
+str2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 550px;height: 40px;vertical-align: middle;text-align:center'>";
+okno1.document.write("<tr>");
+okno1.document.write(str+"свойство:</br>"+"</td>"+str2+"значение:</br>"+"</td>"+"</tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"всю информацию о браузере пользователя(navigator.userAgent)</br>"+str2+navigator.userAgent+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"версию браузера(navigator.appVersion)</br>"+str2+navigator.appVersion+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"название браузера(navigator.appName)</br>"+str2+navigator.appName+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"кодовое название браузера(navigator.appCodeName)</br>"+str2+navigator.appCodeName+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"(ОС, которую использует пользователь,navigator.platform)</br>"+str2+navigator.platform+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"(включена ли поддержка Java в браузере,navigator.javaEnabled() )</br>"+str2+navigator.javaEnabled() +"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"ширину и высоту экрана,screen.width/height </br>"+str2+screen.width+", "+screen.height+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"глубину цвета,screen.colorDepth </br>"+str2+screen.colorDepth+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"URL, которые были посещены в данном окне браузера,history.length </br>"+str2+history.length+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"URL текущего документа,location.href </br>"+str2+location.href+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+"путь к загруженному документу,location.pathname</br>"+str2+location.pathname+"</br></td></tr>");
+okno1.document.write("<tr>");
+okno1.document.write(str+" имя домена загруженного документа, location.host</br>"+str2+location.host+"</br></td></tr>");
+
+		}
+		function hop5(){
+			okno1=window.open();
+			hop4(okno1);
+
+		}
+	</script>
+</head>
+<body>
+<input type="button" value="Открыть окно" onclick="hop1()"/>
+<input type="button" value="Закрыть окно" onclick="hop2()"/>
+<input type="button" value="Запись" onclick="hop3()"/>
+<input type="button" value="Таблица" onclick="hop5()"/>
+
+</body>
+</html>

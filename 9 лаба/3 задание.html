@@ -1,0 +1,46 @@
+<html>
+<style type="text/css">
+  #img1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 50px;
+  background-color: #000000;
+}
+</style>
+<body >
+<img src="fon.jpg"  id="img1" style="width: 100px;height: 50px">
+<script type="text/javascript">
+var startX=0, endX=330, y;
+var posX=10, posY=50; 
+var j=0;
+function move() 
+{ if (j==0) {
+y=Math.sin(startX*startX)+Math.cos(startX*startX);
+posX+=Math.abs(startX); posY+=y;
+ 
+document.getElementById('img1').style.left = posX*1.8 + 'px';
+document.getElementById('img1').style.top = posY*2.1 + 'px';
+ 
+startX+=0.1;}
+if(startX>13){
+   j=1;
+ }
+ 
+ if (j==1) {
+y=Math.sin(startX*startX)+Math.cos(startX*startX);
+posX-=Math.abs(startX); posY-=y;
+ 
+document.getElementById('img1').style.left = posX*1.8 + 'px';
+document.getElementById('img1').style.top = posY*2.1 + 'px';
+ 
+startX-=0.1;
+}
+if(startX<0){
+clearInterval(a);}
+}
+var a=setInterval(move, 100);
+</script>
+</body>
+</html>

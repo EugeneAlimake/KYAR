@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form name=poit>
+<fieldset>
+<textarea id='id'>
+Факультет информационных технологий
+</textarea /id='id'><br/>
+<br/>
+<input multiple value='Фамилия' type="text" name='lastname'/> <br/>
+<input  multiple value='Имя' type="text" name='firstname' type="text"/><br/>
+<br/>
+<b>Специальность <select id="vse" >
+<option  >ПОИТ</option>
+<option value="ИСиТ">ИСиТ</option>
+<option value="ПОИБМС">ПОИБМС</option>
+<option value="ДЭВИ">ДЭВИ</option>
+</select><br/>
+Курс<br/>
+<input type='radio' name='s' value='1' /> 1
+<input type='radio' name='s' value='2' /> 2
+<input type='radio' name='s' value='3' /> 3
+<input type='radio' name='s' value='4' /> 4<br/>
+Предметы<br/>
+<input type='checkbox' name='g' id="1" value='ОИТ' /> ОИТ
+<input type='checkbox' name='g' id="2" value='OAP' /> ОАП
+<input type='checkbox' name='g' id="3" value='История' /> История
+<input type='checkbox' name='g' id="4" value='Физика' /> Физика
+<input type='checkbox' name='g' id="5" value='Математика' /> Математика
+</b><br/>
+
+<input type="button" value='Отправить' onclick='fun4()'>
+<input type="reset"><br/>
+<br/>
+<input type="button" value='Напечатать' onclick='fun3()'>
+</form>
+<form name=lil>
+<select id="vse" >
+<option id="11"></option>
+<option id="22"></option>
+<option id="33"></option>
+<option id="44"></option>
+<option id="55"></option>
+</select>
+</form>
+<script>
+function fun3(){
+/*<input type="submit">*/
+var str, fam, dom, domk, doki,sus,mum;
+
+dom=document.getElementById('1');
+domk=document.getElementById('2');
+doki=document.getElementById('3');
+sus=document.getElementById('4');
+mum=document.getElementById('5');
+str="<div style='text-align:center'>";
+var three = document.getElementById('id');
+var val=document.getElementById('vse').value;
+document.write(str+three.textContent+"<br/>"+"</div>"+"Студент "+document.forms["poit"].lastname.value+ " Специальность "+val+" Курс "+document.forms["poit"].s.value+"</div>");
+	if(dom.checked){
+	document.write("<li>"+dom.value+"</li>");};
+	if(domk.checked){
+	document.write("<li>"+domk.value+"</li>");};
+	if(doki.checked){
+	document.write("<li>"+doki.value+"</li>");};
+	if(sus.checked){
+	document.write("<li>"+sus.value+"</li>");};
+	if(mum.checked){
+	document.write("<li>"+mum.value+"</li>");};
+};
+function fun4(){
+	var str, fam, dom, domk, doki,sus,mum;
+dom=document.getElementById('1');
+domk=document.getElementById('2');
+doki=document.getElementById('3');
+sus=document.getElementById('4');
+mum=document.getElementById('5');
+var add =document.getElementById('11');
+if(dom.checked){dom.value;
+	var str = document.createTextNode(dom.value);
+	add.appendChild(str);}
+	add =document.getElementById('22');
+if(domk.checked){domk.value;
+	str = document.createTextNode(domk.value);
+	add.appendChild(str);};
+	add =document.getElementById('33');	
+if(doki.checked){doki.value;
+	str = document.createTextNode(doki.value);
+	add.appendChild(str);
+}
+	add =document.getElementById('44')
+if(sus.checked){sus.value;
+	str = document.createTextNode(sus.value);
+	add.appendChild(str);
+	};
+	add =document.getElementById('55');
+if(mum.checked){
+	str = document.createTextNode(mum.value);
+	add.appendChild(str);
+	};
+
+};
+</script>
+
+</body>
+</html>

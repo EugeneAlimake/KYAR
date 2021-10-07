@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<img id="image" src="1.jpg" onClick="imgsrc();">
+    <script type='text/javascript'>
+        var i=0;
+        var image=document.getElementById("image");
+        var imgs=new Array('1.jpg', '2.jpg','3.jpg');
+        function imgsrc() {
+            i++;
+            image.src=imgs[i];
+        }
+    </script>
+</body>
+</html>

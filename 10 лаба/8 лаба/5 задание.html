@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>                 //Функция от параметра а
+function On(a) {              
+   a.style.width= '500px';       //На параметр а вешаем событие - увеличение размера 
+   }
+function Off(a) {
+   a.style.width= '100px';        //вешаем на а другое событие - возврат к исходному 
+  }
+</script>
+<body>
+<div><img src="1.jpg" width = "100"  onmouseover="On(this)"  
+onmouseout="Off(this)"> </div>
+
+</body>
+</html>

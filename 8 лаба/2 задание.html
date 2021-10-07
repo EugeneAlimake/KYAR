@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type='text/javascript'>
+var siz = '17px'; 
+function font(element){
+	if(siz == '17px'){
+		element.style.fontSize = '36px';
+		siz = '36px';
+	} else {
+		element.style.fontSize = '17px';
+		siz = '17px';
+	}
+}
+</script>
+
+<body>
+<p id="a" style="font-size:17px;" onclick="font(this)">какой-то текст</p>
+</body>
+</html>

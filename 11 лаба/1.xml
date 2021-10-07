@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<FACULTY>
+	<SPECIALIZATION>
+			<nameun>БГТУ</nameun>
+			<ball>316</ball>
+			<plan>90</plan>
+			<city>Минск</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>БГУиР</nameun>
+			<ball>358</ball>
+			<plan>70</plan>
+			<city>Минск</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>БНТУ(заучное)</nameun>
+			<ball>228</ball>
+			<plan>80</plan>
+			<city>Минск</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>БрГТУ</nameun>
+			<ball>329</ball>
+			<plan>72</plan>
+			<city>Брест</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>ВГУ</nameun>
+			<ball>318</ball>
+			<plan>56</plan>
+			<city>Витебск</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>ГГУ</nameun>
+			<ball>318</ball>
+			<plan>76</plan>
+			<city>Гомель</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>ГрГУ</nameun>
+			<ball>308</ball>
+			<plan>50</plan>
+			<city>Гомель</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>МГУ</nameun>
+			<ball>260</ball>
+			<plan>60</plan>
+			<city>Гомель</city>
+</SPECIALIZATION>
+<SPECIALIZATION>
+			<nameun>ПГУ</nameun>
+			<ball>271</ball>
+			<plan>46</plan>
+			<city>Гомель</city>
+</SPECIALIZATION>
+</FACULTY>

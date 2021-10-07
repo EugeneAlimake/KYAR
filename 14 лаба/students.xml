@@ -1,0 +1,22 @@
+<?xml version = "1.0"?> 
+<?xml-stylesheet type = "text/xsl" href = "students.xsl"?> 
+<class> 
+   <student> 
+      <firstname>Евгения</firstname>
+      <lastname>Николаева</lastname> 
+      <year>2002</year> 
+      <marks>287</marks> 
+   </student> 
+   <student> 
+      <firstname>Ксения</firstname> 
+      <lastname>Буданова</lastname> 
+      <year>2004</year> 
+      <marks>332</marks> 
+   </student> 
+   <student> 
+      <firstname>Антон</firstname> 
+      <lastname>Апаланюк</lastname> 
+      <year>2003</year> 
+      <marks>325</marks> 
+   </student> 
+</class>

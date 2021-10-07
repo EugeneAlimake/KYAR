@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader XML</title>
+	<script type="text/javascript">
+		function loadF(file) {
+			console.log(file[0]);
+			let f = file[0];
+			let reader = new FileReader();
+			reader.readAsText(f);
+			reader.onload = function() {
+				let parser = new DOMParser();
+				let xmlDOM =  parser.parseFromString(reader.result, "text/xml");
+				console.log(xmlDOM);
+				let div = document.getElementById("text");
+				let str = xmlDOM.getElementsByTagName("class")[0];
+				for(let i = 0; i <str.childElementCount;i++) {
+					div.innerHTML = div.innerHTML + str.children[i].textContent + "<br>";
+				}
+				div.innerHTML += "<br><br>";
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="file" onchange="loadF(this.files)"><br><br>
+	<div id="text"></div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<!DOCTYPE SPECIALIZATION [
+<!ELEMENT SPECIALIZATION (nameun,ball,plan,city)>
+<!ELEMENT nameun (#PCDATA)>
+<!ELEMENT ball (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+]>

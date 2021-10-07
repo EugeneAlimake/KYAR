@@ -1,0 +1,49 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type = "text/xsl" href = "students.xsl"?> 
+<class> 
+   <student rollno = "БГТУ"> 
+         <ball>316</ball>
+         <plan>90</plan>
+         <city>Минск</city>
+   </student> 
+   <student rollno = "БГУиР"> 
+         <ball>358</ball>
+         <plan>70</plan>
+         <city>Минск</city>
+   </student> 
+   <student rollno = "БНТУ"> 
+   <ball>228</ball>
+         <plan>80</plan>
+         <city>Минск</city>
+   </student> 
+   <student rollno = "БрГТУ">
+         <ball>329</ball>
+         <plan>72</plan>
+         <city>Брест</city>
+</student>
+<student rollno = "БрГТУ">
+         <ball>318</ball>
+         <plan>56</plan>
+         <city>Витебск</city>
+</student>
+<student rollno = "ГГУ">
+         <ball>318</ball>
+         <plan>76</plan>
+         <city>Гомель</city>
+</student>
+<student rollno = "ГрГУ">
+         <ball>308</ball>
+         <plan>50</plan>
+         <city>Гомель</city>
+</student>
+<student rollno = "МГУ">
+         <ball>260</ball>
+         <plan>60</plan>
+         <city>Гомель</city>
+</student>
+<student rollno = "ПГУ">
+         <ball>2271</ball>
+         <plan>46</plan>
+         <city>Гомель</city>
+</student>
+</class> 

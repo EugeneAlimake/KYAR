@@ -1,0 +1,37 @@
+SPECIALIZATION
+{ display:block;
+text-align:center;
+margin:10px 20px 10px 20px;
+margin-top:12pt;
+border-style:double;
+border-color:#8B7765;
+font-size:15pt;
+background-color:#EEDFCC;}
+nameun
+{ text-align:center;
+color:#8B7765; }
+ball
+{color:#8B7765; 
+ display:block;
+text-align:center;
+font-weight:bold;
+border-top:double;
+border-color:#8B7765}
+plan
+{  color: #8B7765;
+display:block;
+text-align:center;
+border-top:double;
+border-color:#8B7765}
+city
+{  
+	color:#8B7765;
+	display:block;
+text-align:center;
+border-top:double;
+border-color:#8B7765}
+FACULTY
+{  display:block;
+margin:50px 100px;
+border-style:solid;
+}

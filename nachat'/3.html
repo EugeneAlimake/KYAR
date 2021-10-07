@@ -1,0 +1,87 @@
+<html>
+<head>
+<style type='text/css'>
+#wrap {
+margin:0px;
+padding:20px;
+height:1600px;
+background-color:#CCCCFF;
+}
+
+#wrap:hover .ex2{
+animation: tot 5s linear infinite
+}
+#wrap:hover .ex3{
+animation: pop 5s linear infinite}
+#ex1{
+	width: 100px; 
+height: 100px;
+border-radius: 50%;
+border:5px #755C48 solid;
+margin-left:70px;
+margin-right:5x;
+padding:20px;
+background-color:white;
+color:#62639B;
+text-align: center;
+transition: all 1s ease;
+animation: rotate 2s linear infinite}
+
+.ex2 {
+border:3px #BC987E solid;
+margin-top:40px;
+margin-left:200px;
+margin-right:45px;
+padding:30px;
+background-color:#ABCDEF;
+color:white;
+}
+.ex3 {
+border:3px #9F8170 solid;
+border-radius: 10px;
+margin-top:100px;
+margin-left:100px;
+margin-right:45px;
+padding:20px;
+background-color:#DDADAF;
+color:white;
+}
+
+@keyframes rotate {
+from {
+transform: rotate(360deg);}}
+@keyframes tot{ from{border:3px #BC987E solid;
+margin-top:40px;
+margin-left:200px;
+margin-right:45px;
+padding:30px;
+background-color:#ABCDEF;
+color:white;}
+to{background-color:#BC987E;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+border: 7px #ABCDEF ridge;
+color:white;}}
+@keyframes pop{ from{border:3px #9F8170 solid;
+border-radius: 10px;
+margin-top:100px;
+margin-left:100px;
+margin-right:45px;
+padding:20px;
+background-color:#DDADAF;
+color:white;}
+to{background-color: #A8E4A0;
+width: 400px;
+height: 150px;
+border: 20px;
+line-height: 55px;
+border:3px #BC987E solid } }
+</style>
+</head> <body>
+<div id='wrap'>
+<div id="ex1">Содержимое первого элемента</div>
+<div class='ex2'>Содержимое второго элемента</div>
+<div class='ex3'>Содержимое второго элемента</div>
+</div>
+</body> </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+		function output(fullname, course, group, phone, email, ballos) {
+			nameOutput.value=fullname.value;
+			courseOutput.value=course.value;
+			groupOutput.value=group.value;
+			numberOutput.value=phone.value;
+			mailOutput.value=email.value;
+			ballOutput.value=ballos.value;
+		}
+	</script>
+<body>
+	<header>
+    <h1>Сайт Николаевой Евгении</h1>
+  </header>
+	<nav>
+		<img src="fon.jpg" width="125vh">
+		<figcaption>Мяу</figcaption>
+	</nav>
+<form oninput="output(fullname, course, group, phone, email,ballos)">
+		<input name="fullname" type="name" placeholder="ФИО" autofocus>
+		<input name="course" list="курс" placeholder="Выберите курс">
+		<datalist id="курс">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</datalist>
+		<input name="group" list="группа" placeholder="Выберите свою специальность">
+		<datalist id="группа">
+			<option>ИСИТ</option>
+			<option>ДЭВИ</option>
+			<option>ПОИТ</option>
+			<option>ПОИБМС</option>
+		</datalist>
+		<input name="phone" type="tel" placeholder="Номер телефона" pattern="+375-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+		<input name="email" type="email" placeholder="Почта"pattern=".+@gmail.com" size="30">
+		<input name="ballos" type="number"  min="250" max="400"  placeholder="Баллы">
+		<input type="search" name="q" placeholder="Поиск по сайту">
+		<input type="submit" value="Найти"></p>
+		  Цвет:  <input type="color" id="head" name="head"
+           value="#e66465">
+      <p><input list="character">
+      	<input id="datetime" type="datetime-local">
+   <datalist id="character">
+    <option value="Пример1"></option>
+    <option value="Пример2"></option>
+    <option value="Пример3"></option>
+   </datalist></p>
+	</form>
+	<footer>
+		<p>ФИО: <output id="nameOutput"></output></p>
+		<p>КУРС: <output id="courseOutput"></output></p>
+		<p>ГРУППА: <output id="groupOutput"></output></p>
+		<p>НОМЕР ТЕЛЕФОНА: <output id="numberOutput"></output></p>
+		<p>ПОЧТА: <output id="mailOutput"></output></p>
+		<p>БАЛЛЫ: <output id="ballOutput"></output></p>
+	</footer>
+</body>
+</html>

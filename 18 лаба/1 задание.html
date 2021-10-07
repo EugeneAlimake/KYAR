@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+   mark {
+    background: #ffec82;
+    padding: 0 3px;
+    border: 1px dashed #333;
+   }
+    </style>
+<script>
+function getCoordinates() {
+navigator.geolocation.getCurrentPosition(showCoordinates);
+}
+function showCoordinates(position) {
+document.write("Широта:" + position.coords.latitude + "<br/>");
+document.write("Долгота:" + position.coords.longitude); 
+
+}
+</script>
+</head>
+<body>
+ <h1 align="center"><mark >Я, Николаева Евгения, изучаю HTML5</mark> </h1>
+ <br><video src="video.mp4" width="300" height="200" controls="controls"></video>
+ <br><audio src="audio.mp3" controls="controls"> </audio>
+ <br>задание 3
+ <p>Для считывания координат нажмите на кнопку</p>
+<input type="button" value=" Координаты" onclick = 
+"getCoordinates()">
+</body>
+</html>

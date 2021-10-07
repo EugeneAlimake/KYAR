@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id='draw' width='300' height='200'></canvas>
+<script type="text/javascript">
+
+var canvas = document.getElementById("draw");
+var x=canvas.getContext("2d");
+var grad =x.createLinearGradient(0,0,0,150);
+grad.addColorStop(0.0,'blue');
+grad.addColorStop(1.0,'white');
+x.fillStyle=grad;
+x.fillRect(20,20,200,150);
+x.beginPath();
+x.moveTo(100,30);
+x.lineTo(130,70);
+x.lineTo(70,70);
+x.shadowOffsetX=3;
+x.shadowOffsetY=-3;
+x.shadowBlur=5;
+x.shadowColor='black';
+x.fillStyle='#ffaa00';
+x.fillRect(70,70,60,55);
+x.clearRect(90,80,20,20);
+x.fillStyle="green";
+x.closePath();
+x.font='15px Verdana';
+x.fillStyle='#60016d';
+x.fillText("Николаева Евгения", 40, 140);
+x.fill();
+
+
+</script>
+</body>
+</html>

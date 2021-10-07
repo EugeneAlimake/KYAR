@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+str1=("<div style='text-align:center;background:#FFEFD5;color:#7FC7FF;font-family:Impact;'>");
+str2=("<div style='text-align:center;color:#E6BBC1;font-family:Courier New;'>");
+function fun1(){
+x=prompt('Введите первое число', 'число первое');
+y=prompt('Введите второе число','число второе');
+alert('Вы ввели число:'+x+'и'+y);
+if(x > y)
+{document.write(str1+'Первое число больше второго');
+} else if (y > x) {
+document.write(str2+'Второе число больше первого');
+} else{
+document.write(str1+'Числа равны');}
+}
+function fun2(){
+let time = prompt('Который час?', 12.00);
+let message = (time < 13.00) ? 'Доброе утро!' :
+(time > 13.00 && time < 17.00) ? 'Добрый день!' :
+(time > 17.00) ? 'Добрый вечер!' :
+'У вас всё хорошо?';
+alert( message );}
+</script>
+<input type='button' value="5 задание" onclick='fun1()'/>
+<input type='button' value="пример" onclick='fun2()'/>
+</body>
+</html>

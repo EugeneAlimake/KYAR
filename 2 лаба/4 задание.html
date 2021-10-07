@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script type="text/javascript">
+	function fun1(){
+document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#FFE4E1;'>");
+str="<td><b><div style='border:1px #755C48 solid;border-collapse:colspan;width: 100px;height: 20px;vertical-align: middle;text-align:center;background:#D2B48C'>";
+rts="<td><b><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center;background:#D2B48C'>"
+str1="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 100px;height: 60px;vertical-align: middle;text-align:center;'>";
+rts1="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 60px;vertical-align: middle;text-align:center;'>"
+str2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 100px;height: 95px;vertical-align: middle;text-align:center;'>";
+rts2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 95px;vertical-align: middle;text-align:center;'>"
+document.write("<tr>");
+document.write(str+"Число"+"</td></div>");
+document.write(rts+"Метод"+"</div></td>");
+document.write(rts+"Результат"+"</div></td>");
+document.write(rts+"Описание метода"+"</div></td>");
+document.write("</tr>");
+x = new Number('34.21');
+document.write(str1+x+"</div></td>");
+document.write(rts1+"toExponential"+"</div></td>");
+x=x.toExponential(3);
+document.write(rts1+x+"</div></td>");
+document.write(rts1+"представление числа в экспоненциальной форме.")
+document.write("<tr>");
+x = new Number('34.21');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toFixed"+"</div></td>");
+x=x.toFixed(3);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"представление числа в форме с фиксированным кол-вом цифр после точки");
+document.write("<tr>"); 
+	x = new Number('34.21');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toPrecision"+"</div></td>");
+x=x.toPrecision(3);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"представление числа с заданным общим количеством значащих цифр") 
+document.write("</tr>");
+document.write("<tr>"); 
+	x = new Number('34.21');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toString"+"</div></td>");
+x=x.toString(9);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"возвращает строковое представление числа в системе счисления с указанным основанием") 
+document.write("</tr>");
+x = new Number('34');
+document.write(str1+x+"</div></td>");
+document.write(rts1+"toExponential"+"</div></td>");
+x=x.toExponential(3);
+document.write(rts1+x+"</div></td>");
+document.write(rts1+"представление числа в экспоненциальной форме.")
+document.write("<tr>");
+x = new Number('34');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toFixed"+"</div></td>");
+x=x.toFixed(3);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"представление числа в форме с фиксированным кол-вом цифр после точки");
+document.write("<tr>"); 
+	x = new Number('34');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toPrecision"+"</div></td>");
+x=x.toPrecision(3);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"представление числа с заданным общим количеством значащих цифр") 
+document.write("</tr>");
+document.write("<tr>"); 
+	x = new Number('34');
+document.write(str2+x+"</div></td>");
+document.write(rts2+"toString"+"</div></td>");
+x=x.toString(9);
+document.write(rts2+x+"</div></td>");
+document.write(rts2+"возвращает строковое представление числа в системе счисления с указанным основанием") 
+document.write("</tr>");		
+}
+</script>
+<body>
+<input type='button' value='задание 4' onclick='fun1()' />
+
+</body>
+</html>

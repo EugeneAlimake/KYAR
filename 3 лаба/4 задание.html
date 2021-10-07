@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#EFCDB8;'>");
+str="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 75px;height: 20px;vertical-align: middle;text-align:center'>";
+str2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 40px;vertical-align: middle;text-align:center'>";
+document.write("<tr>");
+document.write(str+"Год"+"</td>");
+var myDate = new Date();
+var year = myDate.getFullYear()
+document.write(str+year+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+"Месяц"+"</td>");
+var month = myDate.getMonth();
+document.write(str+(month+1)+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+"День"+"</td>");
+var day = myDate.getDate();
+document.write(str+day+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+"Час"+"</td>");
+var hour = myDate.getHours();
+document.write(str+hour+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+"Минуты"+"</td>");
+var minute = myDate.getMinutes();
+document.write(str+minute+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+"Секунда"+"</td>");
+var second = myDate.getSeconds();
+document.write(str+second+"</td>");
+</script>
+<body>
+
+</body>
+</html>

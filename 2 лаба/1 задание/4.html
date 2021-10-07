@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+str1=("<div style='text-align:center;background:#FFEFD5;color:#7FC7FF;font-family:Impact;'>");
+str2=("<div style='text-align:center;color:#E6BBC1;font-family:Courier New;'>");
+function fun1(){
+	x=prompt('Введите число:', 'Число');
+	if((x<20||x>40)&&(x!=15)&&(x%5==0)) {
+	document.write(str1+'Правильное значение!');
+	} else {
+	document.write(str2+'Не правильное значение');
+	}
+}
+function fun2()
+{
+	x=prompt('Введите число:', 'Число');
+	if((x < 30 || x > 50) && (x % 5 == 0)) {
+	document.write(str2+'Правильное значение!');
+	} else {
+	document.write(str1+'Не правильное значение');
+	}
+}
+</script>
+<input type='button' value='4 задание' onclick='fun1()' />
+<input type='button' value='пример' onclick='fun2()' />
+</body>
+</html>

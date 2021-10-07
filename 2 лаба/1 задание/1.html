@@ -1,0 +1,31 @@
+<DOCTYPE html!>
+<html>
+<script type='text/javascript'>
+str=("<div style='vertical-align: middle;text-align:center;background:#3B83BD;color:#FDF5E6;'>");
+str1=("<div style='text-align:center;background:#AFDAFC;color:#FDF5E6;font-family:Times New Roman;'>");
+str2=("<div style='text-align:center;background:#E6BBC1;color:#FDF5E6;font-family:Comic Sans MS;'>");
+function fun1() {
+   document.write(str1+'Вас приветствует учебный центр');
+}
+function fun2() {  
+ 
+   x=prompt('Ваше имя:', 'Имя');
+   document.write(str+'Добро пожаловать на наши курсы,'+ x);
+   }
+function fun3() {
+
+if (confirm('Хотите стать Web-дизайнером?')) {
+	document.write(str2+'Учите стили CSS и JavaScript!');
+} 
+else{
+	document.write(str2+'Упускаете время!');
+}
+}
+</script>
+</head>
+<body>
+<input type='button' value='приветствие' onclick='fun1()' />
+<input type='button' value='Знакомство' onclick='fun2()' />
+<input type='button' value='Ответь на вопрос' onclick='fun3()' />
+</body>
+</html>

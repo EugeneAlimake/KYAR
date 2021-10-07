@@ -1,0 +1,29 @@
+<html>
+<body>
+<script type='text/javascript'>
+	str1=("<div style='text-align:center;background:#FFEFD5;color:#7FC7FF;font-family:Impact;'>");
+str2=("<div style='text-align:center;color:#E6BBC1;font-family:Courier New;'>");
+function fun1(){
+let x=prompt('Введите число от 1 до 7:');
+switch(x)
+{
+case '1': document.write(str1+'Понедельник');
+break;
+case '2': document.write(str2+'Вторник');
+break;
+case '3': document.write(str1+'Среда');
+break;
+case '4': document.write(str2+'Четверг');
+break;
+case '5': document.write(str1+'Пятница');
+break;
+case '6': document.write(str2+'Суббота');
+break;
+case '7': document.write(str1+'Воскресенье');
+break;
+}
+}
+</script>
+<input type='button' value="6 задание" onclick='fun1()'/>
+</body>
+</html>

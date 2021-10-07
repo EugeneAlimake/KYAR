@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'> 
+<script type="text/javascript">
+function Student(nam,lastname,fisic, math, IT) {
+this.nam=nam;
+this.lastname=lastname;
+this.fisic=fisic;
+this.math=math;
+this.IT=IT;
+this.writename=function writename() 
+{document.write('Имя и фамилия:' +this.nam+" "+this.lastname+",");}
+this.bull=function bull() {
+	document.write(' средний балл: '+( Math.round((this.fisic+this.math+this.IT)/3)+".")); }
+}
+		stud1=new Student('Иван',' Ивановский',7, 8, 9);
+		stud2=new Student('Алистер','МакКензи',5, 8, 9); 
+ 		stud3=new Student('Дилан','Керкленд',4, 5, 10);
+ 		stud4=new Student('Ларсен','Олейн',5, 8, 9);
+		stud1.writename();
+		Student.prototype.kurs=this.kurs;
+		stud1.kurs=2;
+		stud2.kurs=4;
+		stud3.kurs=3;
+		stud4.kurs=1;
+ 		mas=new Array();
+ 		mas[0]='Имя и фамилия:' +stud1.nam+" "+stud1.lastname+",";
+ 		mas[1]='Имя и фамилия:' +stud2.nam+" "+stud2.lastname+",";
+ 		mas[2]='Имя и фамилия:' +stud3.nam+" "+stud3.lastname+","
+ 		mas[3]='Имя и фамилия:' +stud4.nam+" "+stud4.lastname+",";
+
+		document.write(" курс:"+stud1.kurs+",");
+		stud1.bull();
+		document.write("<br/>")
+		stud2.writename();
+		document.write(" курс:"+stud2.kurs+",");
+		stud2.bull();
+		document.write("<br/>")
+		stud3.writename();
+		document.write(" курс:"+stud3.kurs+",");
+		stud4.bull();
+		document.write("<br/>")
+		stud4.writename();
+		document.write(" курс:"+stud4.kurs+",");
+		stud4.bull();
+		document.write("<br/>")
+		document.write("массив:");
+		for(i=0;i<4;i++){
+		document.write("<br/>");	
+		document.write(mas[i]);}
+		delete mas[2];
+		document.write("<br/>")
+		document.write("массив с удаленным 3 номером:");
+		for(i=0;i<4;i++){
+		document.write("<br/>");	
+		document.write(mas[i]);
+	}
+	document.write("<br/>")
+	document.write("проверка есть 2 элемент:");
+	document.write(1 in mas);
+	document.write("<br/>");
+	document.write("проверка есть 3 элемент:");
+	document.write(2 in mas);
+	document.write("<br/>");
+	document.write("проверка на наличие свойства:");
+	document.write('nam' in stud1);
+	document.write("<br/>");
+	document.write("Object:");
+	document.write("<br/>");
+	document.write("stud1:");
+	document.write(stud1 instanceof Object);
+	document.write("<br/>");
+	document.write("stud2:");
+	document.write(stud2 instanceof Object);
+	document.write("<br/>");
+	document.write("stud3:");
+	document.write(stud3 instanceof Object);
+	document.write("<br/>");
+	document.write("stud4:");
+	document.write(stud4 instanceof Object);
+	document.write("<br/>");
+	document.write("Array:");
+	document.write("<br/>");
+	document.write("stud1:");
+	document.write(stud1 instanceof Array);
+	document.write("<br/>");
+	document.write("stud2:");
+	document.write(stud2 instanceof Array);
+	document.write("<br/>");
+	document.write("stud3:");
+	document.write(stud3 instanceof Array);
+	document.write("<br/>");
+	document.write("stud4:");
+	document.write(stud4 instanceof Array);
+	document.write("<br/>");
+	document.write("String:");
+	document.write("<br/>");
+	document.write("stud1:");
+	document.write(stud1 instanceof String);
+	document.write("<br/>");
+	document.write("stud2:");
+	document.write(stud2 instanceof String);
+	document.write("<br/>");
+	document.write("stud3:");
+	document.write(stud3 instanceof String);
+	document.write("<br/>");
+	document.write("stud4:");
+	document.write(stud4 instanceof String);
+	document.write("<br/>");
+
+
+	function fun1()
+	{
+		return 5;
+	}
+	alert(fun1());
+	document.write("Тип данных Student через typeof:");
+	document.write(typeof Student);
+	document.write("<br/>");
+	document.write("Тип данных stud1 через typeof:");
+	document.write(typeof stud1);
+	document.write("<br/>");
+	document.write("Тип данных stud2 через typeof:");
+	document.write(typeof stud2);
+	document.write("<br/>");
+	document.write("Тип данных stud3 через typeof:");
+	document.write(typeof stud3);
+	document.write("<br/>");
+	document.write("Тип данных stud4 через typeof:");
+	document.write(typeof stud4);
+	document.write("<br/>");document.write("<br/>");
+	document.write("Тип данных nam через typeof:");
+	document.write(typeof stud1.nam);	
+	document.write("<br/>");
+	document.write("Тип данных lastname через typeof:");
+	document.write(typeof stud1.lastname);
+	document.write("<br/>");
+	document.write("Тип данных fisic через typeof:");
+	document.write(typeof stud1.fisic);
+	document.write("<br/>");
+	document.write("Тип данных math через typeof:");
+	document.write(typeof stud1.math);
+	document.write("<br/>");
+	document.write("Тип данных IT через typeof:");
+	document.write(typeof stud1.IT);
+</script>
+<body>
+
+</body>
+</html>

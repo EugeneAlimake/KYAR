@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#EFCDB8;'>");
+str="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 75px;height: 20px;vertical-align: middle;text-align:center'>";
+str2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 40px;vertical-align: middle;text-align:center'>";
+let massiv = new Array('pow','pop','push','shift','round','floor','sline','sort');
+let massivA = new Array();
+let massivB = new Array();
+document.write("<tr>");
+document.write(str2+"Первоначальный массив:</br>"+"</td>");
+for (let i = 0; i < massiv.length; i++) {
+document.write(str+massiv[i]+"</td>");
+}
+document.write("</tr>");
+for (let i = 0; i < massiv.length;i++)
+{
+if (massiv[i] in Math)
+{
+massivA.push(massiv[i])
+}
+
+if (massiv[i] in new Array)
+{
+massivB.push(massiv[i]);
+}
+}
+document.write("<tr>");
+document.write(str2+ "Массив Math"+"</td>")
+for (let i = 0; i < massivA.length; i++) {
+document.write(str+massivA[i] +"</td>");
+}
+document.write("</tr>");
+document.write("<tr>");
+document.write(str2+"Массив Array"+"</td>")
+for (let i = 0; i < massivB.length; i++) {
+document.write(str+massivB[i] +"</td>");
+}
+</script>
+<body>
+
+</body>
+</html>

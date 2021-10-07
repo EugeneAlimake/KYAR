@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Моя первая страница</title>
+</head>
+<body background="fon.jpg"> 
+<h1><p align=center><font color="#DCDCDC" face="Courier">Я,<font color="#696969">Николаева Евгения</font>, изучаю HTML и CSS</font></h1>
+<h3><font color="	#DCDCDC" face="Tahoma"><B>Благие знамения</B></font></h3>
+<P><font color="#666699" face="Georgia">Действие сериала разворачивается в 2018 году. <span style="color:#FFFAFA">Демон Кроули (Дэвид Теннант)</span> и <span style="color:#FFFAFA">ангел Азирафель (Майкл Шин)</span>, успев привыкнуть к жизни на Земле, стремятся предотвратить пришествие антихриста и заодно финальную битву между Раем и Адом.</font></h4>
+<h3><font color="#DCDCDC" face="Tahoma"><B>Разработка</B></font></h1>
+<P><font color="#666699" face="Georgia">В апреле 2016 года Нил Гейман объявил, что выполняя предсмертное желание Терри Пратчетта, он работает над сценарием шестисерийной экранизации романа. В январе 2017 года стало известно, что компания Amazon приобрела права на комедийно-апокалиптический мини-сериал Геймана, премьера которого состоялась <span style="color:#FFFAFA">31 мая 2019 года </span>на Amazon Prime. Также было объявлено, что мини-сериал выйдет на BBC в Великобритании, а Гейман возьмёт на себя роль шоураннера проекта.</font>
+<h3><font color="#DCDCDC" face="Tahoma">Подбор актёров</font></h3>
+<P><font color="#666699" face="Georgia"><span style="color:#FFFAFA">14 августа 2017</span> года стало известно, что Дэвид Теннант исполнит роль демона Кроули, а Майкл Шин — ангела Азирафеля</font>
+<h2><font color="#696969" face="Tahoma"><B><I>Список проживающих:</I></B></font></h2>
+<ol type=1>
+<li>Основной состав:</li>
+<ul type="disk">
+<li>Майкл Шин — Азирафель</li>
+<li>Дэвид Теннант — Кроули</li>
+<li>Анна Максвелл Мартин — Вельзевул, падший ангел и князь преисподней</li>
+<li>Джон Хэмм — архангел Гавриил, лидер сил Рая</li>
+</ul>
+<li>Второстепенный состав</li>
+<ul type="circle">
+<li>Самсон Маррачино — Маг Доулинг, сын четы Доулинг, которого принимают за Антихриста</li>
+<li>Джилл Винтерниц — Харриет Доулинг, жена Таддеуса, мать Мага</li>
+<li>Пол Чахиди — Сандальфон</li>
+<li>Джози Лоуренс — Агнеcса Псих, пророчица</li>
+<li>Амма Риз — Язва, одна из друзей Адама</li>
+</ul>
+<br aligh=center> Таблица, содержащая результаты сессии:
+<br><table bgcolor=#C0C0C0 border=2 height=250 width=450 align=center> 
+<tr>
+<td bgcolor=#696969 align=center>ФИО</td>
+<td align=center colspan="3"><B>Николаева Евгения</B></td>
+</tr>
+<tr>
+<td align=center><B>Свое фото</B></td>
+<td bgcolor=#696969 align=center colspan="3"><B> Адрес: ул.Белорусская, д.21, ком.715</B></td>
+</tr>
+<tr>
+<td align=center rowspan="6"><B>1 семестр 2020/2021 уч. года </B></td>
+<td align=center><B>Дата</B></td>
+<td bgcolor=#696969 align=center><B>Предмет</B></td>
+<td align=center><B>Оценка</B></TD>
+</TR>
+<TR>
+<td align=center><B>30.12.2020</B></TD>
+<td align=center BGCOLOR=#696969><B>ОАиП</B></TD>
+<td align=center><B><ozenka>9</ozenka></B></TD>
+</TR>
+<TR>
+<td align=center><B>5.01.2017</B></TD>
+<td align=center BGCOLOR=#696969><B>Физика</B></TD>
+<td align=center><B><ozenka>7</ozenka></B></TD>
+</TR>
+<TR>
+<td align=center><B>11.01.2017</B></TD>
+<td align=center BGCOLOR=#696969><B>ОИТ</B></TD>
+<td align=center><B><ozenka>8</ozenka></B></TD>
+</TR>
+<TR>
+<TD ALIGN=CENTER><B>16.01.2017</B></TD>
+<TD ALIGN=CENTER BGCOLOR=#696969><B>Математика</B></TD>
+<TD ALIGN=CENTER><B><ozenka>5</ozenka></B></TD>
+</TR>
+<TR>
+<TD ALIGN=CENTER><B>22.01.2017</B></TD>
+<TD ALIGN=CENTER BGCOLOR=#696969><B>АЛОЦВМ</B></TD>
+<TD ALIGN=CENTER><B><ozenka>7</ozenka></B></TD>
+</TR>
+</TABLE>
+<script type="text/javascript">
+       var cr = 0;
+       var sum = 0;
+       var all = document.getElementsByTagName('ozenka');
+       for (var i=0; i < all.length; i++){
+        sum += Number(all[i].textContent);
+       }
+       cr = (sum/all.length);
+       alert('Средний балл = ' + cr);
+       var add = document.getElementsByTagName('span');
+       var de = document.createTextNode(' балл: ' + cr);
+       add[1].appendChild(de);
+       </script>
+</BODY>
+</HTML>

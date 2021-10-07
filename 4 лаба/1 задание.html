@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function Gruppa(n,spec,kolich) {
+this.n=n;
+this.spec=spec;
+this.kolich=kolich;
+this.add_stud=function add_stud(k) {
+this.kolich=this.kolich+k;
+document.write('В группу ' + this.n + ' добавили '+ k + ' студентов.<br\>'); 
+}
+this.sub_stud=function sub_stud(k){
+	this.kolich=this.kolich-k;
+				document.write('Из группы '+this.n+' убрали '+k+ ' студентов. <br\>');
+}
+   }
+		gr1=new Gruppa(1, 'ИСиТ', 28);
+		gr2=new Gruppa(2,'ПОИТ',29);
+		gr3=new Gruppa(3,'ПОиМБС',29);
+		gr4=new Gruppa(4,'ДЭВИ',28);
+ 
+		document.write('Номер: '+gr1.n+' специальность: '+gr1.spec+' количество: '+gr1.kolich+'<br\>');
+		document.write('Номер: '+gr2.n+' специальность: '+gr2.spec+' количество: '+gr2.kolich+'<br\>');
+		document.write('Номер: '+gr3.n+' специальность: '+gr3.spec+' количество: '+gr3.kolich+'<br\>');
+		document.write('Номер: '+gr4.n+' специальность: '+gr4.spec+' количество: '+gr4.kolich+'<br\><br\>');
+	gr1.add_stud(9);
+	gr2.add_stud(7);
+	gr3.sub_stud(3);
+	gr4.sub_stud(6);
+ 
+		document.write('<br\>Номер: '+gr1.n+' специальность: '+gr1.spec+' количество: '+gr1.kolich+'<br\>');
+		document.write('Номер: '+gr2.n+' специальность: '+gr2.spec+' количество: '+gr2.kolich+'<br\>');
+		document.write('Номер: '+gr3.n+' специальность: '+gr3.spec+' количество: '+gr3.kolich+'<br\>');
+		document.write('Номер: '+gr4.n+' специальность: '+gr4.spec+' количество: '+gr4.kolich+'<br\><br\>');
+ 
+ 
+ 
+	</script>
+ 
+
+ 
+<body>
+</body>
+</html>

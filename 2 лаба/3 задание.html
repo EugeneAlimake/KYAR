@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function fun1()
+	{
+	 var a;
+     var b;
+     var leng;
+     var area;
+ a=+prompt('Введите первое число', 'число');
+ b=+prompt('Введите второе число', 'число');
+document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#D2B48C;'>");
+document.write("<tr>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 100px;height: 20px;vertical-align: middle;text-align:center;'>"+"Радиус"+"</div></td>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center;'>"+"Площадь круга"+"</div></td>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center;'>"+"Длина окружности"+"</div></td>");
+document.write("</tr>");
+do{
+	 leng= Math.round(2 * 3.14 * a);
+      area = Math.round(3.14 * a * a);
+document.write("<tr>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 100px;height: 20px;vertical-align: middle;text-align:center;'>"+a.toFixed(1)+"</div></td>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center;'>"+leng+"</div></td>");
+document.write("<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center;'>"+area+"</div></td>");
+a=a+0.3;
+document.write("</tr>");
+}
+while (a<=b);
+document.write("</table>");
+}
+</script>
+<body>
+<input type='button' value='3 задание' onclick='fun1()' />
+</body>
+</html>

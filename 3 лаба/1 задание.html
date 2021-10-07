@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	b=3,14;
+	spec = new Array();
+spec[0] =+ 6*Math.pow(b,2)+Math.exp(8);
+spec[1] =+ 2*Math.cos(4)+Math.cos(12)+8*Math.exp(3);
+spec[2] =+ 3*Math.sin(9)+Math.log(5)+Math.pow(3,1/2);
+spec[3] =+ 2*Math.tan(5)+6*b+Math.pow(12,1/2);
+document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#EFCDB8;'>");
+str="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 20px;vertical-align: middle;text-align:center'>";
+str2="<td><div style='border:1px #755C48 solid;border-collapse:colspan;width: 150px;height: 40px;vertical-align: middle;text-align:center'>";
+document.write("<tr>");
+document.write(str+"Первое значение"+"</td>");
+document.write(str+"Второе значение"+"</td>");
+document.write(str+"Третье значение"+"</td>");
+document.write(str+"Четвертое значение"+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str+spec[0]+"</td>");
+document.write(str+spec[1]+"</td>");
+document.write(str+spec[2]+"</td>");
+document.write(str+spec[3]+"</td>");
+document.write("</tr>");
+let min=0;
+let max=0;
+for(let i=0; i<4;i++){	
+	if(spec[i]>spec[max])
+	{
+	max=i;
+	}
+	if(spec[i]<spec[min]){
+	min=i;
+	}
+}
+document.write("<tr>");
+document.write(str2+"Максимальное значение:"+"</td>");
+document.write(str2+spec[max]+"</td>");
+document.write(str2+"Номер мак.значения:"+"</td>")
+document.write(str2+(max+1)+"</td>");
+document.write("</tr>");
+document.write("<tr>");
+document.write(str2+"Минимальное значение:"+"</td>");
+document.write(str2+spec[min]+"</td>");
+document.write(str2+"Номер мин.значения:"+"</td>")
+document.write(str2+(min+1)+"</td>");
+document.write("</tr>");
+</script>
+<body>
+</body>
+</html>

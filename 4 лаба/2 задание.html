@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'> 
+<script type="text/javascript">
+function Student(nam,lastname,fisic, math, IT) {
+this.nam=nam;
+this.lastname=lastname;
+this.fisic=fisic;
+this.math=math;
+this.IT=IT;
+this.writename=function writename() 
+{document.write('Имя и фамилия:' +this.nam+" "+this.lastname+",");}
+this.bull=function bull() {
+	document.write(' средний балл: '+( Math.round((this.fisic+this.math+this.IT)/3)+".")); 
+}
+}
+		stud1=new Student('Иван',' Ивановский',7, 8, 9);
+		stud2=new Student('Алистер','МакКензи',5, 8, 9); 
+ 		stud3=new Student('Дилан','Керкленд',4, 5, 10);
+ 		stud4=new Student('Ларсен','Олейн',5, 8, 9);
+		stud1.writename();
+		Student.prototype.kurs=this.kurs;
+		stud1.kurs=2;
+		stud2.kurs=4;
+		stud3.kurs=3;
+		stud4.kurs=1;
+		document.write(" курс:"+stud1.kurs+",");
+		stud1.bull();
+		document.write("<br/>")
+		stud2.writename();
+		document.write(" курс:"+stud2.kurs+",");
+		stud2.bull();
+		document.write("<br/>")
+		stud3.writename();
+		document.write(" курс:"+stud3.kurs+",");
+		stud4.bull();
+		document.write("<br/>")
+		stud4.writename();
+		document.write(" курс:"+stud4.kurs+",");
+		stud4.bull();
+
+	</script>
+ 
+</head>
+ 
+<body>
+</body>
+</html>
+</script>
+</body>

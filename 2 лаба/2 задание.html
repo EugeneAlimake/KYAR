@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script type="text/javascript">
+	function fun1(){
+	alert('Введите два числа!');
+	x=prompt('Введите первое число', 'число');
+	y=prompt('Введите второе число','число');
+document.write("<table style=' border:1px #755C48 solid;border-collapse:colspan;background:#C0DCC0;font-family:Arial, Helvetica, Verdana, sans-serif;'>");
+for (let i =1;i<=x;i++){
+document.write("<tr>")
+ for (let k = 1; k <=y; k++) {
+ 	
+ st2="<td><div style='border:3px #FFDAB9 solid;border-collapse:colspan;width: 20px;height: 20px;vertical-align: middle;text-align:center;'>"+(i*k)+"</div></td>";
+	 document.write(st2);
+}
+ document.write("</tr>");
+ }
+}
+
+</script>
+<body>
+
+<input type='button' value='2 задание' onclick='fun1()' />
+</body>
+</html>
+
